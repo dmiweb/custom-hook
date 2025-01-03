@@ -41,6 +41,8 @@ export const useJsonFetch = (url: string, opts = {}): [FetchResult] => {
     };
 
     fetchData();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return [{ data, loading, error }];
